@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#"
+     xml:base="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-34="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent_produkuje_Samochody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent_produkuje_Samochody">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce_produkuje_Samochody"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce_produkuje_Samochody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce_produkuje_Samochody">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_jest-produkowany_w_Miejscu"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo_napedza_Samochod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo_napedza_Samochod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_jest-produkowany_w_Miejscu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_jest-produkowany_w_Miejscu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#osiagaMaxPredkosc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#osiagaMaxPredkosc">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#AmerykaPolnocna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#AmerykaPolnocna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Kontynent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce_produkuje_Samochody"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_jest-produkowany_w_Miejscu"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodBenzynowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodBenzynowy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodDiesel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodDiesel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodElektryk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodElektryk">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodMiejski -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodMiejski">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodNaGaz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodNaGaz">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodSportowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodSportowy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#osiagaMaxPredkosc"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">300</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodTransportowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodTransportowy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod_wykorzystuje_Paliwo"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#autobusLPG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#autobusLPG">
+        <Samochod_wykorzystuje_Paliwo rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#ferrari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#ferrari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <Samochod_jest-produkowany_w_Miejscu rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#wlochy"/>
+        <Samochod_wykorzystuje_Paliwo rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna"/>
+        <osiagaMaxPredkosc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">320</osiagaMaxPredkosc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#polska -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#polska">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#scania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#scania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <Samochod_jest-produkowany_w_Miejscu rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#szwecja"/>
+        <Samochod_wykorzystuje_Paliwo rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy"/>
+        <osiagaMaxPredkosc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</osiagaMaxPredkosc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#solarisAutobusLPG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#solarisAutobusLPG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <Samochod_jest-produkowany_w_Miejscu rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#polska"/>
+        <Samochod_wykorzystuje_Paliwo rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg"/>
+        <osiagaMaxPredkosc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</osiagaMaxPredkosc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#szwecja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#szwecja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#tesla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#tesla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        <Samochod_jest-produkowany_w_Miejscu rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#usa"/>
+        <Samochod_wykorzystuje_Paliwo rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad"/>
+        <osiagaMaxPredkosc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">250</osiagaMaxPredkosc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#usa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#usa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#AmerykaPolnocna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#wlochy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#wlochy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Europa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Miejsce"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Paliwo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#Samochod"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodBenzynowy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodDiesel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodElektryk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#SamochodNaGaz"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#benzyna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#lpg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#olejNapedowy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomas/ontologies/2023/0/untitled-ontology-34#prad"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
